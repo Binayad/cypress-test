@@ -1,0 +1,13 @@
+pipelines:
+    branches:
+        master:
+            - step:
+                  name: Run Test
+                  script:
+                    - pipe: atlassian/ssh-run:0.2.2
+                      variables:
+                         SSH_USER: 'ubuntu'
+                         SERVER: 'SSH_SERVER_URL'
+                         COMMAND: 'cd ~/cypress-automation && npm install && npm run test'
+                         PORT: '22'
+                         

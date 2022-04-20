@@ -1,0 +1,9 @@
+{
+    "projectId": "pwvais",
+   
+        "retries": {
+          "runMode": 2,
+          "openMode": 2
+        }
+}
+     
